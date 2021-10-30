@@ -20,8 +20,8 @@ matrix:
 cache:
   - '%USERPROFILE%\Documents\WindowsPowerShell\Modules -> appveyor.yml'
   - C:\projects\helpers -> appveyor.yml, test\bin\*.ps1
-build: off
-deploy: off
+build: false
+deploy: false
 for:
   - matrix:
       only:
