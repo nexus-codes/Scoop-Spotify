@@ -16,5 +16,5 @@ jobs:
         if: startsWith(github.event.comment.body, '/verify')
         env:
           SHOVEL: "1"
-          GITH_EMAIL: nexus@duck.com
+          GITH_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
