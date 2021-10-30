@@ -16,5 +16,5 @@ jobs:
         if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
         env:
           SHOVEL: "1"
-          GITH_EMAIL: therandomlabsinc@gmail.com
+          GITH_EMAIL: nexus@duck.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

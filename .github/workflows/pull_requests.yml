@@ -15,5 +15,5 @@ jobs:
         uses: Ash258/Scoop-GithubActions@stable-win
         env:
           SHOVEL: "1"
-          GITH_EMAIL: therandomlabsinc@gmail.com
+          GITH_EMAIL: nexus@duck.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
