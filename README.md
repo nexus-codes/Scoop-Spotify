@@ -4,11 +4,11 @@
 <!-- markdownlint-disable MD040 -->
 <!-- markdownlint-disable MD046 -->
 
-# Scoop-Spotify
-
 ## Fork notes
 
 Forked from the original repo and remaintained fixing all errosrs
+
+# Scoop-Spotify
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
