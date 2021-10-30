@@ -4,16 +4,17 @@
 <!-- markdownlint-disable MD040 -->
 <!-- markdownlint-disable MD046 -->
 
-# Scoop-Spotify [![Build status](https://ci.appveyor.com/api/projects/status/0q9mhsk39dw59ej5/branch/master?svg=true)](https://ci.appveyor.com/project/TheRandomLabs/scoop-spotify/branch/master)
+# Scoop-Spotify
+
+## Fork notes
+
+Forked from the original repo and remaintained fixing all errosrs
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
     $ scoop bucket add spotify https://github.com/TheRandomLabs/Scoop-Spotify.git
 
 ...I've spent an unhealthy amount of time on automating all of this.
-
-Also check out my [personal bucket](https://github.com/TheRandomLabs/Scoop-Bucket)
-and my [Python bucket](https://github.com/TheRandomLabs/Scoop-Python)!
 
 ## spotify-latest: hash check failed
 
@@ -23,70 +24,70 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 
 ## Notes
 
-* None of the packages in this bucket can be installed globally.
-* If you have the means, please buy Spotify Premium instead of installing BlockTheSpot.
-* All of the Spicetify packages require Spotify to be installed either through this Scoop bucket or
-the official installer.
-* All themes, extensions and custom apps for Spicetify should be installed to `~\.spicetify`
-instead of the spicetify-cli installation directory.
-* Installing or updating any of the packages in this bucket automatically applies the Spicetify
-configuration and preserves BlockTheSpot if it is installed.
-* All Spicetify packages apart from spicetify-cli depend on spicetify-cli.
-* `--purge` or `-p` should be used to fully uninstall all packages apart from `blockthespot`,
-`google-spicetify` and `spicetify-themes`.
+- None of the packages in this bucket can be installed globally.
+- If you have the means, please buy Spotify Premium instead of installing BlockTheSpot.
+- All of the Spicetify packages require Spotify to be installed either through this Scoop bucket or
+  the official installer.
+- All themes, extensions and custom apps for Spicetify should be installed to `~\.spicetify`
+  instead of the spicetify-cli installation directory.
+- Installing or updating any of the packages in this bucket automatically applies the Spicetify
+  configuration and preserves BlockTheSpot if it is installed.
+- All Spicetify packages apart from spicetify-cli depend on spicetify-cli.
+- `--purge` or `-p` should be used to fully uninstall all packages apart from `blockthespot`,
+  `google-spicetify` and `spicetify-themes`.
 
 ### BlockTheSpot
 
-* This blocks advertisements for the latest version of Spotify.
-* This package depends on `spotify-latest`.
-* This is not an executable program. `spotify-latest` will be patched automatically every time this
-package or any of the Spicetify packages are installed or updated.
-* If BlockTheSpot is ever reset, `blockthespot` can be run to reapply it. This usually happens
-after running Spicetify commands, and running `spicetify-apply` rather than `spicetify apply`
-ensures that BlockTheSpot is enabled if it is installed.
+- This blocks advertisements for the latest version of Spotify.
+- This package depends on `spotify-latest`.
+- This is not an executable program. `spotify-latest` will be patched automatically every time this
+  package or any of the Spicetify packages are installed or updated.
+- If BlockTheSpot is ever reset, `blockthespot` can be run to reapply it. This usually happens
+  after running Spicetify commands, and running `spicetify-apply` rather than `spicetify apply`
+  ensures that BlockTheSpot is enabled if it is installed.
 
 ### genius-spicetify
 
-* See [here](https://github.com/khanhas/genius-spicetify#musicxmatch) to configure a custom
-Musixmatch user token. `manifest.json` can be found at
-`~\.spicetify\CustomApps\genius\manifest.json`.
+- See [here](https://github.com/khanhas/genius-spicetify#musicxmatch) to configure a custom
+  Musixmatch user token. `manifest.json` can be found at
+  `~\.spicetify\CustomApps\genius\manifest.json`.
 
 ### spicetify-autoVolume
 
-* See
-[here](https://github.com/amanharwara/spicetify-autoVolume#changing-the-intervalminimum-volume)
-to modify the configuration. `autoVolume.js` can be found at
-`~\.spicetify\Extensions\autoVolume.js`.
+- See
+  [here](https://github.com/amanharwara/spicetify-autoVolume#changing-the-intervalminimum-volume)
+  to modify the configuration. `autoVolume.js` can be found at
+  `~\.spicetify\Extensions\autoVolume.js`.
 
 ### spicetify-cli
 
-* Experimental features, fast user switching and all
-[default extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions) apart from Auto Skip
-Videos and DJ Mode are enabled by default.
-* `spicetify-apply` is should be run instead of `spicetify apply` if BlockTheSpot is installed, as
-it ensures that BlockTheSpot is enabled if it is installed.
-* It should be noted that `spicetify-apply` also runs `spicetify restore` and `spicetify backup`
-before running `spicetify apply` to ensure that changes are applied every time.
-* For similar reasons, `spicetify-enable-devtool` and `spicetify-disable-devtool` should be run
-instead of `spicetify enable-devtool` and `spicetify disable-devtool`.
-* The three above commands also support the `-quiet` switch.
+- Experimental features, fast user switching and all
+  [default extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions) apart from Auto Skip
+  Videos and DJ Mode are enabled by default.
+- `spicetify-apply` is should be run instead of `spicetify apply` if BlockTheSpot is installed, as
+  it ensures that BlockTheSpot is enabled if it is installed.
+- It should be noted that `spicetify-apply` also runs `spicetify restore` and `spicetify backup`
+  before running `spicetify apply` to ensure that changes are applied every time.
+- For similar reasons, `spicetify-enable-devtool` and `spicetify-disable-devtool` should be run
+  instead of `spicetify enable-devtool` and `spicetify disable-devtool`.
+- The three above commands also support the `-quiet` switch.
 
 ### spicetify-jqbx
 
-* This requires Spotify Premium.
+- This requires Spotify Premium.
 
 ### spicetify-themes
 
-* The [Elementary](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Elementary)
-theme requires the Open Sans and Raleway fonts:
+- The [Elementary](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Elementary)
+  theme requires the Open Sans and Raleway fonts:
 
 ```powershell
 $ scoop bucket add nerd-fonts
 $ sudo scoop install Open-Sans Raleway
 ```
 
-* The [WintergatanBlueprint](https://github.com/morpheusthewhite/spicetify-themes/tree/master/WintergatanBlueprint)
-theme requires the Ubuntu font:
+- The [WintergatanBlueprint](https://github.com/morpheusthewhite/spicetify-themes/tree/master/WintergatanBlueprint)
+  theme requires the Ubuntu font:
 
 ```powershell
 $ scoop bucket add nerd-fonts
@@ -95,22 +96,22 @@ $ sudo scoop install Ubuntu-NF
 
 ### Spotify (latest)
 
-* This is the latest version of Spotify.
-* Unlike [Ash258's version](https://github.com/Ash258/scoop-Ash258/blob/master/bucket/Spotify.json),
-this version installs completely silently and to the Scoop directory.
-* Spotify's built-in updater is disabled, and Scoop should be used to update it instead.
-* Spotify should be installed locally and not globally.
-* This cannot be installed concurrently with `spotify-with-blockthespot`.
+- This is the latest version of Spotify.
+- Unlike [Ash258's version](https://github.com/Ash258/scoop-Ash258/blob/master/bucket/Spotify.json),
+  this version installs completely silently and to the Scoop directory.
+- Spotify's built-in updater is disabled, and Scoop should be used to update it instead.
+- Spotify should be installed locally and not globally.
+- This cannot be installed concurrently with `spotify-with-blockthespot`.
 
 ### Spotify with BlockTheSpot
 
-* This is an outdated version of Spotify (1.1.4.197.g92d52c4f) with an
-[old version of BlockTheSpot](https://github.com/master131/BlockTheSpot).
-* Spotify's built-in updater is disabled.
-* This should only be used if BlockTheSpot does not work with the latest version of Spotify.
-* Spotify with BlockTheSpot should be installed locally and not globally.
-* Installation and uninstallation of this package require administrator privileges.
-* This cannot be installed concurrently with `spotify-latest`.
+- This is an outdated version of Spotify (1.1.4.197.g92d52c4f) with an
+  [old version of BlockTheSpot](https://github.com/master131/BlockTheSpot).
+- Spotify's built-in updater is disabled.
+- This should only be used if BlockTheSpot does not work with the latest version of Spotify.
+- Spotify with BlockTheSpot should be installed locally and not globally.
+- Installation and uninstallation of this package require administrator privileges.
+- This cannot be installed concurrently with `spotify-latest`.
 
 ## Installing and customizing Spotify
 
