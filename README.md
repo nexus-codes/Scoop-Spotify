@@ -55,6 +55,7 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 
 ### genius-spicetify
 
+- This is a legacy app with the release of spicetify-v2
 - See [here](https://github.com/khanhas/genius-spicetify#musicxmatch) to configure a custom
   Musixmatch user token. `manifest.json` can be found at
   `~\.spicetify\CustomApps\genius\manifest.json`.
@@ -147,11 +148,6 @@ is applied, and if Spotify was open previously, it is reopened.
     $ spicetify config current_theme Default
     $ scoop install spicetify-themes
 
-[genius-spicetify](https://github.com/khanhas/genius-spicetify) can be installed to fetch lyrics
-from Genius or Musixmatch:
-
-    $ scoop install genius-spicetify
-
 [spicetify-autoVolume](https://github.com/amanharwara/spicetify-autoVolume#changing-the-intervalminimum-volume)
 can be installed to automatically decrease the volume at specific intervals of time:
 
@@ -164,7 +160,7 @@ can be installed to automatically decrease the volume at specific intervals of t
 All of the above packages can be updated through Scoop.
 
 **If you don't care about reading any of this** and just want a quick way to install ad-blocked
-Spotify with the Default theme, genius-spicetify and developer tools, copy and paste this into
+Spotify with the Default theme, and developer tools, copy and paste this into
 PowerShell:
 
 ```powershell
@@ -174,7 +170,7 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 scoop install git sudo
 
 scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
-scoop install spotify-latest blockthespot spicetify-cli spicetify-themes genius-spicetify spicetify-autovolume
+scoop install spotify-latest blockthespot spicetify-cli spicetify-themes spicetify-autovolume
 
 spicetify config current_theme Default --quiet
 spicetify-enable-devtool -quiet
