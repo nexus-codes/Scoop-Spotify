@@ -6,13 +6,15 @@
 
 ## Fork notes
 
-Forked from the original repo and remaintained fixing all errosrs
+- Forked from the original repo and remaintained fixing all errors.
+- All instances of the [original](https://github.com/TheRandomLabs/Scoop-Spotify) are replaced in this README. This is not an attempt to steal credit
+- Rewritten some parts to update with the current status of the spicetify project
 
 # Scoop-Spotify
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
-    $ scoop bucket add spotify https://github.com/TheRandomLabs/Scoop-Spotify.git
+    $ scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
 
 ...I've spent an unhealthy amount of time on automating all of this.
 
@@ -78,21 +80,7 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 
 ### spicetify-themes
 
-- The [Elementary](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Elementary)
-  theme requires the Open Sans and Raleway fonts:
-
-```powershell
-$ scoop bucket add nerd-fonts
-$ sudo scoop install Open-Sans Raleway
-```
-
-- The [WintergatanBlueprint](https://github.com/morpheusthewhite/spicetify-themes/tree/master/WintergatanBlueprint)
-  theme requires the Ubuntu font:
-
-```powershell
-$ scoop bucket add nerd-fonts
-$ sudo scoop install Ubuntu-NF
-```
+- Installs [morpheusthewhite/spicetify-themes](https://github.com/morpheusthewhite/spicetify-themes)
 
 ### Spotify (latest)
 
@@ -140,19 +128,10 @@ locally:
     $ scoop install google-spicetify
 
 I can recommend the
-[Adapta-Nokto](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Adapta-Nokto)
+[Default](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Default)
 theme, which can be applied by running the following:
 
-    $ spicetify config current_theme Adapta-Nokto
-    $ spicetify-apply
-
-As an example, I will also demonstrate the installation of the
-[Elementary](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Elementary) theme,
-which requires Open Sans and Raleway to be installed:
-
-    $ scoop bucket add nerd-fonts
-    $ sudo scoop install Open-Sans Raleway
-    $ spicetify config current_theme Elementary
+    $ spicetify config current_theme Default
     $ spicetify-apply
 
 To install spicetify-cli and apply a theme silently, the theme can be configured before installing
@@ -160,7 +139,7 @@ spicetify-themes. When any of the Spicetify packages are installed, the current 
 is applied, and if Spotify was open previously, it is reopened.
 
     $ scoop install spicetify-cli
-    $ spicetify config current_theme Elementary
+    $ spicetify config current_theme Default
     $ scoop install spicetify-themes
 
 [genius-spicetify](https://github.com/khanhas/genius-spicetify) can be installed to fetch lyrics
@@ -180,7 +159,7 @@ can be installed to automatically decrease the volume at specific intervals of t
 All of the above packages can be updated through Scoop.
 
 **If you don't care about reading any of this** and just want a quick way to install ad-blocked
-Spotify with the Elementary theme, genius-spicetify and developer tools, copy and paste this into
+Spotify with the Default theme, genius-spicetify and developer tools, copy and paste this into
 PowerShell:
 
 ```powershell
@@ -189,13 +168,10 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 
 scoop install git sudo
 
-scoop bucket add nerd-fonts
-sudo scoop install Open-Sans Raleway --global
-
-scoop bucket add spotify https://github.com/TheRandomLabs/Scoop-Spotify.git
+scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
 scoop install spotify-latest blockthespot spicetify-cli spicetify-themes genius-spicetify spicetify-autovolume
 
-spicetify config current_theme Elementary --quiet
+spicetify config current_theme Default --quiet
 spicetify-enable-devtool -quiet
 ```
 
