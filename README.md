@@ -6,6 +6,7 @@
 
 ## Fork notes
 
+- Be sure to check the [spicetify-cli repo](https://github.com/khanhas/spicetify-cli) and [spicetify-themes repo](https://github.com/morpheusthewhite/spicetify-themes) for open issues if you face any errors. Feel free to open an issue here too.
 - Forked from the original repo and remaintained fixing all errors.
 - All instances of the [original](https://github.com/TheRandomLabs/Scoop-Spotify) are replaced in this README. This is not an attempt to steal credit
 - Rewritten some parts to update with the current status of the spicetify project
