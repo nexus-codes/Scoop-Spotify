@@ -19,7 +19,7 @@
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
-    $ scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
+    scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
 
 ...I've spent an unhealthy amount of time on automating all of this.
 
@@ -76,6 +76,7 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 ### spicetify-canary
 
 - Nightly builds of the [spicetify-cli](https://github.com/khanhas/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/nexus-codes/spicetify-builds)
+- Recommended to be installed and updated with the `-k` flag to avoid the cached copy
 - This version should be uninstalled before using the release version of spicetify
 
 ### spicetify-jqbx
