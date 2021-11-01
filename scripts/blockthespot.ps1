@@ -1,4 +1,5 @@
 $spotify_path = scoop which Spotify
+$spotify_dir = Split-Path $spotify_path
 $spotify_dir_parent = Split-Path $spotify_dir
 
 $SpotifyDirectory = Split-Path $spotify_path
