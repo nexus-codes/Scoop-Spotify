@@ -52,9 +52,9 @@
     "spicetify-enable-devtool.ps1"
   ],
   "checkver": {
-    "github": "https://github.com/khanhas/spicetify-cli"
+    "github": "https://github.com/nexus-codes/spicetify-builds"
   },
   "autoupdate": {
-    "url": "https://github.com/khanhas/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x64.zip"
+    "url": "https://github.com/nexus-codes/spicetify-builds/releases/download/v$version/build.zip"
   }
 }
