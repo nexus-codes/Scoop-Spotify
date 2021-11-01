@@ -73,6 +73,11 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
   instead of `spicetify enable-devtool` and `spicetify disable-devtool`.
 - The three above commands also support the `-quiet` switch.
 
+### spicetify-canary
+
+- Nightly builds of the [spicetify-cli](https://github.com/khanhas/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/nexus-codes/spicetify-builds)
+- This version should be uninstalled before using the release version of spicetify
+
 ### spicetify-jqbx
 
 - This requires Spotify Premium.
