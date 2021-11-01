@@ -1,19 +1,15 @@
-name: Pull Requests
-
 on:
   pull_request:
     types: [opened]
-
+name: Pull Requests
 jobs:
-  pullRequestValidator:
+  pullRequestHandler:
     name: Pull Request Validator
     runs-on: windows-latest
-
     steps:
-      - uses: actions/checkout@master
-      - name: Validate Pull Request
-        uses: Ash258/Scoop-GithubActions@stable-win
+      - uses: actions/checkout@main
+      - name: Pull Request Validator
+        uses: shovel-org/GithubActions@main
         env:
-          SHOVEL: "1"
           GITH_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
