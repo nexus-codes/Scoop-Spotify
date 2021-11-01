@@ -16,7 +16,7 @@
   - [Update the config init script to handle both the profiles #61](https://github.com/TheRandomLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
 
 # Scoop-Spotify
-[![Excavator](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/nexus-codes/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/dopewind/scoop-spotify) 
+[![Excavator](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/nexus-codes/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/dopewind/scoop-spotify)
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
