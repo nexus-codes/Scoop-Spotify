@@ -53,13 +53,6 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
   after running Spicetify commands, and running `spicetify-apply` rather than `spicetify apply`
   ensures that BlockTheSpot is enabled if it is installed.
 
-### genius-spicetify
-
-- This is a legacy app with the release of spicetify-v2
-- See [here](https://github.com/khanhas/genius-spicetify#musicxmatch) to configure a custom
-  Musixmatch user token. `manifest.json` can be found at
-  `~\.spicetify\CustomApps\genius\manifest.json`.
-
 ### spicetify-autoVolume
 
 - See
