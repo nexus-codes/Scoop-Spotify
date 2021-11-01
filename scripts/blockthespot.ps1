@@ -26,7 +26,7 @@ Uninstalling Spotify.
     Write-Host @'
 Exiting...
 '@`n
-    Pause 
+    Pause
     exit
   }
 }
@@ -105,7 +105,6 @@ if ($ch -eq 'y') {
   $xpuiBundlePath = "$SpotifyApps\xpui.spa"
   $xpuiUnpackedPath = "$SpotifyApps\xpui\xpui.js"
   $fromZip = $false
-    
   # Try to read xpui.js from xpui.spa for normal Spotify installations, or
   # directly from Apps/xpui/xpui.js in case Spicetify is installed.
   if (Test-Path $xpuiBundlePath) {
@@ -134,17 +133,14 @@ if ($ch -eq 'y') {
     # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
     # With ".ads.leaderboard.isEnabled&&false" + separator
     $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
-    
     # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
     $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
-    
     if ($fromZip) {
       # Rewrite it to the zip
       $writer = New-Object System.IO.StreamWriter($entry.Open())
       $writer.BaseStream.SetLength(0)
       $writer.Write($xpuiContents)
       $writer.Close()
-
       $zip.Dispose()
     } else {
       Set-Content -Path $xpuiUnpackedPath -Value $xpuiContents
@@ -155,16 +151,10 @@ if ($ch -eq 'y') {
 Won't remove ad placeholder and upgrade button.
 '@`n
 }
-
 $tempDirectory = $PWD
 Pop-Location
-
-Remove-Item -Recurse -LiteralPath $tempDirectory  
-
+Remove-Item -Recurse -LiteralPath $tempDirectory
 Write-Host 'Patching Complete, starting Spotify...'
 Start-Process -WorkingDirectory $SpotifyDirectory -FilePath $SpotifyExecutable
 Write-Host 'Done.'
-
-
-
 exit
