@@ -175,7 +175,7 @@ spicetify config current_theme Default --quiet
 spicetify-enable-devtool -quiet
 ```
 
-**Or even shorter**, but with Adapta-Nokto instead:
+**Or even shorter**,:
 
 ```powershell
 $ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; iwr -useb https://raw.githubusercontent.com/TheRandomLabs/Scoop-Spotify/master/basic-setup.ps1 | iex
