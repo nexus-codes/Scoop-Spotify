@@ -6,8 +6,8 @@
   "suggest": {
     "Spotify": ["spotify-latest", "spotify-with-blockthespot"]
   },
-  "url": "https://github.com/khanhas/spicetify-cli/releases/download/v2.7.1/spicetify-2.7.1-windows-x64.zip",
-  "hash": "28db9bc1d7bbad757c45898eb353847ea9ab872e61b98ab8296c716591cebe0b",
+  "url": "https://github.com/nexus-codes/spicetify-builds/releases/download/latest/build.zip",
+  "hash": "6b86b6cc53452dca72ce3fa8665bc97097a559b33b6b30cb95b733568faa754f",
   "notes": [
     "This version should be uninstalled before switching to release version of spicetify-cli",
     "Run `spicetify-apply` instead of `spicetify apply` to ensure changes are applied correctly, especially if `blockthespot` is also installed.",
