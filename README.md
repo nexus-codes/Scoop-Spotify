@@ -13,7 +13,7 @@
 - PRs to the original repo merged to this one. All of them are mentioned in their respective commit descriptions too
   - [Use Windows SID instead of the name Everyone for better system language compatibility #47](https://github.com/TheRandomLabs/Scoop-Spotify/pull/47) by [dionysius](https://github.com/dionysius)
   - [Fix init-spicetify-config script for spicetify v2 #51](https://github.com/TheRandomLabs/Scoop-Spotify/pull/51) by [SaifAqqad](https://github.com/SaifAqqad)
-  - [Update the config init script to handle both the profiles #61](https://github.com/TheRandomLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
+  - [Update the config init script to handle both the profiles #61](https://github.com/TheLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
 
 # Scoop-Spotify
 
@@ -112,14 +112,14 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 
 First, the latest version of Spotify should be installed:
 
-    $ scoop install spotify-latest
+      scoop install spotify-latest
 
 Note that Spotify should not be installed globally, as it stores files in user-specific directories.
 
 Once Spotify is installed, [spicetify-cli](https://github.com/khanhas/spicetify-cli) can be
 installed to customize the Spotify client:
 
-    $ scoop install spicetify-cli
+      scoop install spicetify-cli
 
 Again, spicetify-cli should be installed locally, as it also stores files in a user-specific
 location.
@@ -128,35 +128,35 @@ location.
 a collection of community-created themes for Spicetify. Obviously, this should also be installed
 locally:
 
-    $ scoop install spicetify-themes
+      scoop install spicetify-themes
 
 [google-spicetify](https://github.com/khanhas/google-spicetify) is also available:
 
-    $ scoop install google-spicetify
+      scoop install google-spicetify
 
 I can recommend the
 [Default](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Default)
 theme, which can be applied by running the following:
 
-    $ spicetify config current_theme Default
-    $ spicetify-apply
+      spicetify config current_theme Default
+      spicetify-apply
 
 To install spicetify-cli and apply a theme silently, the theme can be configured before installing
 spicetify-themes. When any of the Spicetify packages are installed, the current configuration
 is applied, and if Spotify was open previously, it is reopened.
 
-    $ scoop install spicetify-cli
-    $ spicetify config current_theme Default
-    $ scoop install spicetify-themes
+      scoop install spicetify-cli
+      spicetify config current_theme Default
+      scoop install spicetify-themes
 
 [spicetify-autoVolume](https://github.com/amanharwara/spicetify-autoVolume#changing-the-intervalminimum-volume)
 can be installed to automatically decrease the volume at specific intervals of time:
 
-    $ scoop install spicetify-autovolume
+      scoop install spicetify-autovolume
 
 [BlockTheSpot](https://github.com/mrpond/BlockTheSpot) can be installed to block advertisements:
 
-    $ scoop install blockthespot
+      scoop install blockthespot
 
 All of the above packages can be updated through Scoop.
 
@@ -189,5 +189,5 @@ foolproof way to set everything up automatically.
 And in the future, if you want to update any installed packages:
 
 ```powershell
-$ scoop update *
+  scoop update *
 ```
