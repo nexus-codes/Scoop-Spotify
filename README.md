@@ -16,6 +16,7 @@
   - [Update the config init script to handle both the profiles #61](https://github.com/TheRandomLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
 
 # Scoop-Spotify
+
 [![Excavator](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/nexus-codes/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/dopewind/scoop-spotify)
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
@@ -176,10 +177,10 @@ spicetify config current_theme Default --quiet
 spicetify-enable-devtool -quiet
 ```
 
-**Or even shorter**,:
+**Or even shorter**, but with Sleek theme and Deep color congig as I like it :
 
 ```powershell
-$ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; iwr -useb https://raw.githubusercontent.com/TheRandomLabs/Scoop-Spotify/master/basic-setup.ps1 | iex
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; iwr -useb https://raw.githubusercontent.com/nexus-codes/Scoop-Spotify/master/basic-setup.ps1 | iex
 ```
 
 I wrote the above script mostly for people who don't care about using Scoop and just need a

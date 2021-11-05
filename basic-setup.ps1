@@ -5,5 +5,6 @@ scoop install git
 scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
 scoop install spotify-latest blockthespot spicetify-cli spicetify-themes
 
-spicetify config current_theme Default --quiet
+spicetify config current_theme Sleek --quiet
+spicetify congig color_scheme Deep --quiet
 spicetify-enable-devtool -quiet
