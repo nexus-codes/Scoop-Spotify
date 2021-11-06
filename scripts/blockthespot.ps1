@@ -24,7 +24,7 @@ if ((Get-FileHash "$spotify_dir\chrome_elf.dll").Hash -ne (Get-FileHash "$PSScri
   Move-Item -Force "$spotify_dir\chrome_elf.dll" -Destination "$spotify_dir\chrome_elf_bak.dll"
   Copy-Item "$PSScriptRoot\chrome_elf.dll" -Destination "$spotify_dir"
 
-  Copy-Item -ErrorAction Ignore "$PSScriptRoot\config.ini" -Destination "$spotify_dir" 
+  Copy-Item -ErrorAction Ignore "$PSScriptRoot\config.ini" -Destination "$spotify_dir"
 }
 
 if ($spotify_running) { Start-Process "$spotify_path" }
