@@ -177,7 +177,7 @@ spicetify config current_theme Default --quiet
 spicetify-enable-devtool -quiet
 ```
 
-**Or even shorter**, but with Sleek theme and Deep color congig as I like it :
+**Or even shorter**, but with Sleek theme and Deep color config as I like it :
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; iwr -useb https://raw.githubusercontent.com/nexus-codes/Scoop-Spotify/master/basic-setup.ps1 | iex
