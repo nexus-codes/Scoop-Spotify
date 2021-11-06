@@ -21,10 +21,10 @@ if ((Get-FileHash "$spotify_dir\chrome_elf.dll").Hash -ne (Get-FileHash "$PSScri
   $spotify_running = Get-Process -ErrorAction Ignore -Name Spotify
   Stop-Process -ErrorAction Ignore -Name Spotify | Out-Null
 
-  Move-Item -Force "$spotify_dir\chrome_elf.dll" -Destination "$spotify_dir\chrome_elf.dll.original"
+  Move-Item -Force "$spotify_dir\chrome_elf.dll" -Destination "$spotify_dir\chrome_elf_bak.dll"
   Copy-Item "$PSScriptRoot\chrome_elf.dll" -Destination "$spotify_dir"
 
-  if (-not (Get-Content -ErrorAction Ignore "$spotify_dir\config.ini")) { Copy-Item "$PSScriptRoot\config.ini" -Destination "$spotify_dir" }
-
-  if ($spotify_running) { Start-Process "$spotify_path" }
+  Copy-Item -ErrorAction Ignore "$PSScriptRoot\config.ini" -Destination "$spotify_dir" 
 }
+
+if ($spotify_running) { Start-Process "$spotify_path" }

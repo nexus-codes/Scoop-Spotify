@@ -27,7 +27,7 @@
       "Stop-Process -ErrorAction Ignore -Name Spotify | Out-Null",
       "",
       "$spotify_dir = \"$(appdir spotify-latest)\\current\"",
-      "Move-Item -ErrorAction Ignore -Force \"$spotify_dir\\chrome_elf.dll.original\" -Destination \"$spotify_dir\\chrome_elf.dll\"",
+      "Move-Item -ErrorAction Ignore -Force \"$spotify_dir\\chrome_elf_bak.dll\" -Destination \"$spotify_dir\\chrome_elf.dll\"",
       "Remove-Item -ErrorAction Ignore \"$spotify_dir\\config.ini\"",
       "",
       "if ($spotify_running) { Start-Process \"$spotify_dir\\Spotify.exe\" }"
