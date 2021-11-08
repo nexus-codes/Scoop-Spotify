@@ -65,7 +65,7 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 ### spicetify-cli
 
 - Experimental features, fast user switching and all
-  [default extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions) apart from Auto Skip
+  [default extensions](https://github.com/khanhas/sDpicetify-cli/wiki/Extensions) apart from Auto Skip
   Videos and DJ Mode are enabled by default.
 - `spicetify-apply` is should be run instead of `spicetify apply` if BlockTheSpot is installed, as
   it ensures that BlockTheSpot is enabled if it is installed.
@@ -80,6 +80,7 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 - Nightly builds of the [spicetify-cli](https://github.com/khanhas/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/nexus-codes/spicetify-builds)
 - Recommended to be installed and updated with the `-k` flag to avoid the cached copy
 - This version should be uninstalled before using the release version of spicetify
+- Recommended only if the release version has bugs which were recently fixed
 
 ### spicetify-jqbx
 
@@ -100,10 +101,10 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 
 ### Spotify with BlockTheSpot
 
+- Absolutley not recommended at all. Not updated and not guaranteed to work
 - This is an outdated version of Spotify (1.1.4.197.g92d52c4f) with an
   [old version of BlockTheSpot](https://github.com/master131/BlockTheSpot).
 - Spotify's built-in updater is disabled.
-- This should only be used if BlockTheSpot does not work with the latest version of Spotify.
 - Spotify with BlockTheSpot should be installed locally and not globally.
 - Installation and uninstallation of this package require administrator privileges.
 - This cannot be installed concurrently with `spotify-latest`.
