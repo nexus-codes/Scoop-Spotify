@@ -6,7 +6,7 @@
   "suggest": {
     "Spotify": ["spotify-latest", "spotify-with-blockthespot"]
   },
-  "url": "https://github.com/nexus-codes/spicetify-builds/releases/download/latest/build.zip",
+  "url": "https://github.com/zwxi/spicetify-builds/releases/download/latest/build.zip",
   "hash": "6b86b6cc53452dca72ce3fa8665bc97097a559b33b6b30cb95b733568faa754f",
   "notes": [
     "This version should be uninstalled before switching to release version of spicetify-cli",
@@ -53,9 +53,9 @@
     "spicetify-enable-devtool.ps1"
   ],
   "checkver": {
-    "github": "https://github.com/nexus-codes/spicetify-builds"
+    "github": "https://github.com/zwxi/spicetify-builds"
   },
   "autoupdate": {
-    "url": "https://github.com/nexus-codes/spicetify-builds/releases/download/latest/build.zip"
+    "url": "https://github.com/zwxi/spicetify-builds/releases/download/latest/build.zip"
   }
 }

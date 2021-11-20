@@ -17,11 +17,11 @@
 
 # Scoop-Spotify
 
-[![Excavator](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/nexus-codes/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/nexus-codes/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/dopewind/scoop-spotify)
+[![Excavator](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/zwxi/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/dopewind/scoop-spotify)
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
-    scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
+    scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git
 
 ...I've spent an unhealthy amount of time on automating all of this.
 
@@ -77,7 +77,7 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 
 ### spicetify-canary
 
-- Nightly builds of the [spicetify-cli](https://github.com/khanhas/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/nexus-codes/spicetify-builds)
+- Nightly builds of the [spicetify-cli](https://github.com/khanhas/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/zwxi/spicetify-builds)
 - Recommended to be installed and updated with the `-k` flag to avoid the cached copy
 - This version should be uninstalled before using the release version of spicetify
 - Recommended only if the release version has bugs which were recently fixed
@@ -171,7 +171,7 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 
 scoop install git sudo
 
-scoop bucket add spotify https://github.com/nexus-codes/Scoop-Spotify.git
+scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git
 scoop install spotify-latest blockthespot spicetify-cli spicetify-themes spicetify-autovolume
 
 spicetify config current_theme Default --quiet
@@ -181,7 +181,7 @@ spicetify-enable-devtool -quiet
 **Or even shorter**, but with Sleek theme and Deep color config as I like it :
 
 ```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; iwr -useb https://raw.githubusercontent.com/nexus-codes/Scoop-Spotify/master/basic-setup.ps1 | iex
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; iwr -useb https://raw.githubusercontent.com/zwxi/Scoop-Spotify/master/basic-setup.ps1 | iex
 ```
 
 I wrote the above script mostly for people who don't care about using Scoop and just need a
