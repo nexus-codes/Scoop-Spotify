@@ -4,6 +4,16 @@
 <!-- markdownlint-disable MD040 -->
 <!-- markdownlint-disable MD046 -->
 
+# Scoop-Spotify
+
+[![Excavator](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/zwxi/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/zwxi/scoop-spotify)
+
+A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
+
+    scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git
+
+...I've spent an unhealthy amount of time on automating all of this.
+
 ## Fork notes
 
 - Be sure to check the [spicetify-cli repo](https://github.com/khanhas/spicetify-cli/issues) and [spicetify-themes repo](https://github.com/morpheusthewhite/spicetify-themes/issues) for open issues if you face any errors. Feel free to open an issue here too.
@@ -14,16 +24,6 @@
   - [Use Windows SID instead of the name Everyone for better system language compatibility #47](https://github.com/TheRandomLabs/Scoop-Spotify/pull/47) by [dionysius](https://github.com/dionysius)
   - [Fix init-spicetify-config script for spicetify v2 #51](https://github.com/TheRandomLabs/Scoop-Spotify/pull/51) by [SaifAqqad](https://github.com/SaifAqqad)
   - [Update the config init script to handle both the profiles #61](https://github.com/TheLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
-
-# Scoop-Spotify
-
-[![Excavator](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/zwxi/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/dopewind/scoop-spotify)
-
-A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
-
-    scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git
-
-...I've spent an unhealthy amount of time on automating all of this.
 
 ## spotify-latest: hash check failed
 
