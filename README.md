@@ -10,7 +10,7 @@
 
 <div align="center" >
 
-[![GitHub branch checks state](https://img.shields.io/github/checks-status/zwxi/Scoop-Spotify/main?label=Excavator&logo=github&style=for-the-badge](https://github.com/zwxi/Scoop-Spotify/actions) [![Appveyor](https://img.shields.io/appveyor/build/zwxi/Scoop-Spotify?label=checks&logo=appveyor&style=for-the-badge)](https://ci.appveyor.com/project/zwxi/scoop-spotify)
+[![GitHub branch checks state](https://img.shields.io/github/checks-status/zwxi/Scoop-Spotify/main?label=Excavator&logo=github&style=for-the-badge)](https://github.com/zwxi/Scoop-Spotify/actions) [![Appveyor](https://img.shields.io/appveyor/build/zwxi/Scoop-Spotify?label=checks&logo=appveyor&style=for-the-badge)](https://ci.appveyor.com/project/zwxi/scoop-spotify)
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
