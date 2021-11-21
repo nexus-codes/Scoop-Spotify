@@ -6,7 +6,7 @@
 
 # Scoop-Spotify
 
-[![Excavator](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml/badge.svg)](https://github.com/zwxi/Scoop-Spotify/actions/workflows/excavator.yml) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/zwxi/scoop-spotify?branch=master&svg=true)](https://ci.appveyor.com/project/zwxi/scoop-spotify)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/zwxi/Scoop-Spotify/main?label=Excavator&logo=github&style=for-the-badge) ![AppVeyor](https://img.shields.io/appveyor/build/zwxi/Scoop-Spotify?label=checks&logo=appveyor&style=for-the-badge)
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
