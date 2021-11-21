@@ -65,8 +65,9 @@ issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
 ### spicetify-cli
 
 - Experimental features, fast user switching and all
-  [default extensions](https://github.com/khanhas/sDpicetify-cli/wiki/Extensions) apart from Auto Skip
-  Videos and DJ Mode are enabled by default.
+  [default extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions) apart from Auto Skip
+  Videos and all [default apps](https://github.com/khanhas/spicetify-cli/wiki/Custom-Apps) are enabled by default.
+  Note: Default apps in the sidebar can be toggled to be hidden from the 'sidebar config' menu in compatible themes or by removing the apps from `config-xpui.ini`
 - `spicetify-apply` is should be run instead of `spicetify apply` if BlockTheSpot is installed, as
   it ensures that BlockTheSpot is enabled if it is installed.
 - It should be noted that `spicetify-apply` also runs `spicetify restore` and `spicetify backup`

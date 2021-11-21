@@ -13,8 +13,10 @@ $config_exists = Test-Path "$env:USERPROFILE\.spicetify\config-xpui.ini"
 
 & "$PSScriptRoot\spicetify.exe" config spotify_path "$(Resolve-Path(Split-Path $spotify_path))" --quiet
 
+# keeps existing config
 if (-not ($config_exists -or $new_config_exists)) {
     & "$PSScriptRoot\spicetify.exe" config experimental_features 1 --quiet
     & "$PSScriptRoot\spicetify.exe" config fastUser_switching 1 --quiet
-    & "$PSScriptRoot\spicetify.exe" config extensions "autoSkipExplicit.js|fullAppDisplay.js|keyboardShortcut.js|shuffle+.js|trashbin.js|webnowplaying.js" --quiet
+    & "$PSScriptRoot\spicetify.exe" config extensions "autoSkipExplicit.js|bookmark.js|fullAppDisplay.js|keyboardShortcut.js|loopyLoop.js|popupLyrics.js|shuffle+.js|trashbin.js|webnowplaying.js" --quiet
+    & "$PSScriptRoot\spicetify.exe" config custom_apps "reddit|lyrics-plus|new-releases" --quiet
 }
