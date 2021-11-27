@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: Automatic merge for hash-fix action
+    conditions:
+      - author~=^github-actions\[bot\]$
+    actions:
+      merge:
+        method: merge
