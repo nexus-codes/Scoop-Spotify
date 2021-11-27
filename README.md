@@ -36,6 +36,13 @@ A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify an
 - Feel free the click the link that pops up when this happens to report the issue (you can also manually report an issue)
 - You can also use the `-s` or `--skip` flag when installing/updating to skip the hash-check step
 
+## scoop-update error
+
+If it shows any error while running `scoop update`, you can
+
+- Try again after some time to see if it goes away
+- Remove and re-add the bucket with `scoop bucket rm spotify` and `scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git` all apps will stay installed
+
 ## Notes
 
 - None of the packages in this bucket can be installed globally.
