@@ -30,11 +30,11 @@ A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify an
   - [Fix init-spicetify-config script for spicetify v2 #51](https://github.com/TheRandomLabs/Scoop-Spotify/pull/51) by [SaifAqqad](https://github.com/SaifAqqad)
   - [Update the config init script to handle both the profiles #61](https://github.com/TheLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
 
-## spotify-latest: hash check failed
+## hash check failed
 
-If the `spotify-latest` manifest has recently been updated, this error may occur because
-depending on the region, the old installer may stay cached for a bit. To work around this
-issue, pass the `-s` or `--skip` flag to Scoop when updating the package.
+- If the manifest has been recently updated due to very recent changes to the respective repos this error might occour.
+- Feel free the click the link that pops up when this happens to report the issue (you can also manually report an issue)
+- You can also use the `-s` or `--skip` flag when installing/updating to skip the hash-check step
 
 ## Notes
 
