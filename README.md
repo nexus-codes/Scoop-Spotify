@@ -67,6 +67,7 @@ If it shows any error while running `scoop update`, you can
 - If BlockTheSpot is ever reset, `blockthespot` can be run to reapply it. This usually happens
   after running Spicetify commands, and running `spicetify-apply` rather than `spicetify apply`
   ensures that BlockTheSpot is enabled if it is installed.
+- Does not remove the Upgrade button, but all ads are blocked
 
 ### spicetify-autoVolume
 
