@@ -3,7 +3,7 @@
   "description": "Tool for customizing the Spotify client.",
   "homepage": "https://github.com/khanhas/spicetify-cli",
   "license": "GPL-3.0-only",
-  "depends": "spotify-cli",
+  "depends": "spotify-latest",
   "url": "https://github.com/khanhas/spicetify-cli/releases/download/v2.8.3/spicetify-2.8.3-windows-x64.zip",
   "hash": "fdfa44cfbf0975b1371ada069de8590f6cbc0cfc5f4fd9b99a7ff38b0e16d879",
   "notes": [
