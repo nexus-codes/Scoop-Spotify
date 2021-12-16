@@ -61,13 +61,14 @@ If it shows any error while running `scoop update`, you can
 ### BlockTheSpot
 
 - This blocks advertisements for the latest version of Spotify.
-- This package depends on `spotify-latest`.
+- This package depends on `spotify-latest` and `spicetify-cli`.
+- Spicetify will also auto install but it won't theme by default so changes will be minimal. Spicetify is needed to remove upgrade buttons
 - This is not an executable program. `spotify-latest` will be patched automatically every time this
   package or any of the Spicetify packages are installed or updated.
 - If BlockTheSpot is ever reset, `blockthespot` can be run to reapply it. This usually happens
   after running Spicetify commands, and running `spicetify-apply` rather than `spicetify apply`
   ensures that BlockTheSpot is enabled if it is installed.
-- Does not remove the Upgrade button, but all ads are blocked
+- Removes ad placeholder and the upgrade button
 
 ### spicetify-autoVolume
 

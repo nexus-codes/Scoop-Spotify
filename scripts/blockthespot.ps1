@@ -25,6 +25,24 @@ if ((Get-FileHash "$spotify_dir\chrome_elf.dll").Hash -ne (Get-FileHash "$PSScri
   Copy-Item "$PSScriptRoot\chrome_elf.dll" -Destination "$spotify_dir"
 
   Copy-Item -ErrorAction Ignore "$PSScriptRoot\config.ini" -Destination "$spotify_dir"
+
+  $xpuiUnpackedPath = "$spotify_dir\Apps\xpui\xpui.js"
+  if (Test-Path $xpuiUnpackedPath) {
+    Copy-Item -Path $xpuiUnpackedPath -Destination "$xpuiUnpackedPath.bak"
+    $xpuiContents = Get-Content -Path $xpuiUnpackedPath -Raw
+
+  } else {
+    Write-Host 'Could not find xpui.js, please open an issue on the BlockTheSpot repository.'
+  }
+
+  if ($xpuiContents) {
+    # Replace ".ads.leaderboard.isEnabled" + separator - '}' or ')'
+    # With ".ads.leaderboard.isEnabled&&false" + separator
+    $xpuiContents = $xpuiContents -replace '(\.ads\.leaderboard\.isEnabled)(}|\))', '$1&&false$2'
+    # Delete ".createElement(XX,{onClick:X,className:XX.X.UpgradeButton}),X()"
+    $xpuiContents = $xpuiContents -replace '\.createElement\([^.,{]+,{onClick:[^.,]+,className:[^.]+\.[^.]+\.UpgradeButton}\),[^.(]+\(\)', ''
+    Set-Content -Path $xpuiUnpackedPath -Value $xpuiContents
+  }
 }
 
 if ($spotify_running) { Start-Process "$spotify_path" }
