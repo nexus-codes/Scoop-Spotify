@@ -54,6 +54,7 @@ If it shows any error while running `scoop update`, you can
   instead of the spicetify-cli installation directory.
 - Installing or updating any of the packages in this bucket automatically applies the Spicetify
   configuration and preserves BlockTheSpot if it is installed.
+- Extension managers such as [spicetify-marketplace](https://github.com/CharlieS1103/spicetify-marketplace) can be installed  with it's installation instructions nativeley. Use `spicetify-apply` instead of `spicetify apply` as always after installation
 - All Spicetify packages apart from spicetify-cli depend on spicetify-cli.
 - `--purge` or `-p` should be used to fully uninstall all packages apart from `blockthespot`,
   `google-spicetify` and `spicetify-themes`.
