@@ -14,6 +14,8 @@
 
 </div>
 
+!! Spotify and Spicetify now exist in official scoop repos. This fork is being maintained only for my personal use from now on !!
+
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
     scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git
