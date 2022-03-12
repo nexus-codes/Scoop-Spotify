@@ -14,7 +14,7 @@
 
 </div>
 
-!! Spotify and Spicetify now exist in official scoop repos. This fork is being maintained only for my personal use from now on !!
+!! Spotify and Spicetify now exist in official scoop repos.Spicetify also includes adblock extensions now. This fork is being maintained only for my personal use from now on !!
 
 A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify and related packages.
 
