@@ -3,7 +3,7 @@
   "description": "Custom app for Spicetify that adds a JQBX tab.",
   "homepage": "https://github.com/Kasama/spicetify-jqbx",
   "license": "Freeware",
-  "depends": "spicetify-cli",
+  "depends": "spicetify",
   "url": "https://github.com/Kasama/spicetify-jqbx/archive/v1.1.0.zip",
   "hash": "cadff6dbd8fc3e45afbbcb8d6a977adaac4c6c5eed3fa7ea5853b285e45eb894",
   "installer": {
@@ -35,7 +35,7 @@
   "uninstaller": {
     "script": [
       "Remove-Item -Recurse -ErrorAction Ignore \"$env:USERPROFILE\\.spicetify\\CustomApps\\spicetify-jqbx\"",
-      "if (installed spicetify-cli) {",
+      "if (installed spicetify) {",
       "    spicetify config custom_apps JQBX- --quiet",
       "    init-spicetify-config-and-apply",
       "}"

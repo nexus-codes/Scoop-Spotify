@@ -53,7 +53,7 @@
       "icacls \"$env:LOCALAPPDATA\\Spotify\\Update\" /deny Everyone:R | Out-Null"
     ]
   },
-  "post_install": "if (installed spicetify-cli) { init-spicetify-config-and-apply }",
+  "post_install": "if (installed spicetify) { init-spicetify-config-and-apply }",
   "uninstaller": {
     "script": [
       "if (!(is_admin)) {",
