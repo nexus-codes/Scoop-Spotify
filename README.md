@@ -191,7 +191,7 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 scoop install git sudo
 
 scoop bucket add spotify https://github.com/zwxi/Scoop-Spotify.git
-scoop install spotify-latest blockthespot spicetify-cli spicetify-themes spicetify-autovolume
+scoop install spotify-latest blockthespot spicetify spicetify-themes spicetify-autovolume
 
 spicetify config current_theme Default --quiet
 spicetify-enable-devtool -quiet
