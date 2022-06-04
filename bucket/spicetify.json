@@ -20,7 +20,7 @@
       "",
       "$null, $bucket = Find-Manifest($app)",
       "$bucketdir = Find-BucketDirectory($bucket)",
-      "'get-spotify-path', 'init-spicetify-config', 'init-spicetify-config-and-apply', 'spicetify-apply', 'spicetify-disable-devtool', 'spicetify-enable-devtool' | ForEach-Object { Copy-Item \"$bucketdir\\..\\..\\\\spotify\\scripts\\$_.ps1\" -Destination $dir }",
+      "'get-spotify-path', 'init-spicetify-config', 'init-spicetify-config-and-apply', 'spicetify-apply', 'spicetify-disable-devtool', 'spicetify-enable-devtool' | ForEach-Object { Copy-Item \"$bucketdir\\..\\..\\\\buckets\\spotify\\scripts\\$_.ps1\" -Destination $dir }",
       "",
       "if (-not (Test-Path (& \"$dir\\get-spotify-path.ps1\"))) {",
       "    Write-Host \"Spotify must be installed to install $app.\" -Foreground Red",
