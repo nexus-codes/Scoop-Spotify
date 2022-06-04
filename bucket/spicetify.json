@@ -18,7 +18,7 @@
       "    exit 1",
       "}",
       "",
-      "$null, $bucket = Find-Manifest($app)",
+      "$null, $bucket = find_manifest($app)",
       "$bucketdir = Find-BucketDirectory($bucket)",
       "'get-spotify-path', 'init-spicetify-config', 'init-spicetify-config-and-apply', 'spicetify-apply', 'spicetify-disable-devtool', 'spicetify-enable-devtool' | ForEach-Object { Copy-Item \"$bucketdir\\..\\..\\\\buckets\\spotify\\scripts\\$_.ps1\" -Destination $dir }",
       "",
