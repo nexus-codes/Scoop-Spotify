@@ -1,7 +1,7 @@
 {
   "version": "nightly",
   "description": "Tool for customizing the Spotify client.",
-  "homepage": "https://github.com/khanhas/spicetify-cli",
+  "homepage": "https://github.com/spicetify/spicetify-cli",
   "license": "GPL-3.0-only",
   "suggest": {
     "Spotify": ["spotify-latest", "spotify-with-blockthespot"]
