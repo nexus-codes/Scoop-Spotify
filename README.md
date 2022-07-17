@@ -30,7 +30,7 @@ A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify an
 
 ## Fork notes
 
-- Be sure to check the [spicetify-cli repo](https://github.com/khanhas/spicetify-cli/issues) and [spicetify-themes repo](https://github.com/morpheusthewhite/spicetify-themes/issues) for open issues if you face any errors. Feel free to open an issue here too.
+- Be sure to check the [spicetify-cli repo](https://github.com/spicetify/spicetify-cli/issues) and [spicetify-themes repo](https://github.com/spicetify/spicetify-themes/issues) for open issues if you face any errors. Feel free to open an issue here too.
 - Forked from the original repo and remaintained fixing all errors.
 - All instances of the [original](https://github.com/TheRandomLabs/Scoop-Spotify) are replaced in this README. This is not an attempt to steal credit
 - Rewritten some parts to update with the current status of the spicetify project
@@ -89,8 +89,8 @@ If it shows any error while running `scoop update`, you can
 ### spicetify-cli
 
 - Experimental features, fast user switching and all
-  [default extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions) apart from Auto Skip
-  Videos and all [default apps](https://github.com/khanhas/spicetify-cli/wiki/Custom-Apps) are enabled by default.
+  [default extensions](https://github.com/spicetify/spicetify-cli/wiki/Extensions) apart from Auto Skip
+  Videos and all [default apps](https://github.com/spicetify/spicetify-cli/wiki/Custom-Apps) are enabled by default.
   Note: Default apps in the sidebar can be toggled to be hidden from the 'sidebar config' menu in compatible themes or by removing the apps from `config-xpui.ini`
 - `spicetify-apply` is should be run instead of `spicetify apply` if BlockTheSpot is installed, as
   it ensures that BlockTheSpot is enabled if it is installed.
@@ -102,7 +102,7 @@ If it shows any error while running `scoop update`, you can
 
 ### spicetify-canary
 
-- Nightly builds of the [spicetify-cli](https://github.com/khanhas/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/zwxi/spicetify-builds)
+- Nightly builds of the [spicetify-cli](https://github.com/spicetify/spicetify-cli) repo built by my own Github Actions hosted [here](https://github.com/zwxi/spicetify-builds)
 - Recommended to be installed and updated with the `-k` flag to avoid the cached copy
 - This version should be uninstalled before using the release version of spicetify
 - Recommended only if the release version has bugs which were recently fixed
@@ -113,7 +113,7 @@ If it shows any error while running `scoop update`, you can
 
 ### spicetify-themes
 
-- Installs [morpheusthewhite/spicetify-themes](https://github.com/morpheusthewhite/spicetify-themes)
+- Installs [spicetify/spicetify-themes](https://github.com/spicetify/spicetify-themes)
 
 ### Spotify (latest)
 
@@ -142,7 +142,7 @@ First, the latest version of Spotify should be installed:
 
 Note that Spotify should not be installed globally, as it stores files in user-specific directories.
 
-Once Spotify is installed, [spicetify-cli](https://github.com/khanhas/spicetify-cli) can be
+Once Spotify is installed, [spicetify-cli](https://github.com/spicetify/spicetify-cli) can be
 installed to customize the Spotify client:
 
       scoop install spicetify-cli
@@ -150,18 +150,18 @@ installed to customize the Spotify client:
 Again, spicetify-cli should be installed locally, as it also stores files in a user-specific
 location.
 
-[spicetify-themes](https://github.com/morpheusthewhite/spicetify-themes) can be installed for
+[spicetify-themes](https://github.com/spicetify/spicetify-themes) can be installed for
 a collection of community-created themes for Spicetify. Obviously, this should also be installed
 locally:
 
       scoop install spicetify-themes
 
-[google-spicetify](https://github.com/khanhas/google-spicetify) is also available:
+[google-spicetify](https://github.com/spicetify/google-spicetify) is also available:
 
       scoop install google-spicetify
 
 I can recommend the
-[Default](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Default)
+[Default](https://github.com/spicetify/spicetify-themes/tree/master/Default)
 theme, which can be applied by running the following:
 
       spicetify config current_theme Default
