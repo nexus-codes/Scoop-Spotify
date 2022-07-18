@@ -14,7 +14,7 @@
 
 </div>
 
-!! Spotify and Spicetify now exist in official scoop repos.Spicetify also includes adblock extensions now. This fork is being maintained only for my personal use from now on !!
+!! Spotify and Spicetify now exist in official scoop repos. Spicetify also includes adblock extensions now. This fork is being maintained only for my personal use from now on. !!
 
 ## Switch to Shovel
 
@@ -32,12 +32,12 @@ A [Scoop](https://github.com/lukesampson/scoop) bucket for Spotify, Spicetify an
 
 - Be sure to check the [spicetify-cli repo](https://github.com/spicetify/spicetify-cli/issues) and [spicetify-themes repo](https://github.com/spicetify/spicetify-themes/issues) for open issues if you face any errors. Feel free to open an issue here too.
 - Forked from the original repo and remaintained fixing all errors.
-- All instances of the [original](https://github.com/TheRandomLabs/Scoop-Spotify) are replaced in this README. This is not an attempt to steal credit
+- All instances of the [original](https://github.com/TheRandomLabs/Scoop-Spotify) are replaced in this README. This is not an attempt to steal credit.
 - Rewritten some parts to update with the current status of the spicetify project
-- PRs to the original repo merged to this one. All of them are mentioned in their respective commit descriptions too
+- PRs to the original repo merged to this one. All of them are mentioned in their respective commit descriptions too.
   - [Use Windows SID instead of the name Everyone for better system language compatibility #47](https://github.com/TheRandomLabs/Scoop-Spotify/pull/47) by [dionysius](https://github.com/dionysius)
   - [Fix init-spicetify-config script for spicetify v2 #51](https://github.com/TheRandomLabs/Scoop-Spotify/pull/51) by [SaifAqqad](https://github.com/SaifAqqad)
-  - [Update the config init script to handle both the profiles #61](https://github.com/TheLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
+  - [Update the config init script to handle both the profiles #61](https://github.com/TheRandomLabs/Scoop-Spotify/pull/61) by [Lunchb0ne](https://github.com/Lunchb0ne)
 
 ## hash check failed
 
@@ -118,7 +118,7 @@ If it shows any error while running `scoop update`, you can
 ### Spotify (latest)
 
 - This is the latest version of Spotify.
-- Unlike [Ash258's version](https://github.com/Ash258/scoop-Ash258/blob/master/bucket/Spotify.json),
+- Unlike [Ash258's version](https://github.com/Ash258/Shovel-Ash258/blob/master/bucket/Spotify.yml),
   this version installs completely silently and to the Scoop directory.
 - Spotify's built-in updater is disabled, and Scoop should be used to update it instead.
 - Spotify should be installed locally and not globally.
