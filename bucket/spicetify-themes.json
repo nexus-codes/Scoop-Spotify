@@ -1,41 +1,41 @@
 {
-  "version": "2022-07-17T04.47.59",
-  "description": "Community-created themes for Spicetify.",
-  "homepage": "https://github.com/spicetify/spicetify-themes",
-  "license": "MIT",
-  "url": "https://github.com/spicetify/spicetify-themes/archive/master.zip",
-  "hash": "de426720278d23e942865ed7203b94b03323d937d81fd7eafe3f944a3f67a1a3",
-  "notes": "A preview of all of the themes can be found here: https://github.com/spicetify/spicetify-themes/blob/master/THEMES.md",
-  "extract_dir": "spicetify-themes-master",
-  "installer": {
-    "script": [
-      "if ($global) {",
-      "    Write-Host \"$app cannot be installed globally.\" -Foreground Red",
-      "    exit 1",
-      "}",
-      "",
-      "if (-not (Test-Path (get-spotify-path))) {",
-      "    Write-Host \"Spotify must be installed to install $app.\" -Foreground Red",
-      "    exit 1",
-      "}",
-      "",
-      "Get-ChildItem $dir -Directory | ForEach-Object {",
-      "    Remove-Item -ErrorAction Ignore -Recurse \"$env:USERPROFILE\\.spicetify\\Themes\\$($_.Name)\"",
-      "    Copy-Item -Recurse $_.FullName -Destination \"$env:USERPROFILE\\.spicetify\\Themes\"",
-      "}",
-      "",
-      "init-spicetify-config-and-apply"
-    ]
-  },
-  "uninstaller": {
-    "script": "Get-ChildItem \"$dir\" | ForEach-Object { Remove-Item -Recurse -ErrorAction Ignore \"$env:USERPROFILE\\.spicetify\\Themes\\$($_.Name)\" }"
-  },
-  "checkver": {
-    "url": "https://api.github.com/repos/spicetify/spicetify-themes/commits",
-    "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
-    "replace": "$1$2.$3.$4"
-  },
-  "autoupdate": {
-    "url": "https://github.com/spicetify/spicetify-themes/archive/master.zip"
-  }
+    "version": "2022-07-21T13.30.26",
+    "description": "Community-created themes for Spicetify.",
+    "homepage": "https://github.com/spicetify/spicetify-themes",
+    "license": "MIT",
+    "url": "https://github.com/spicetify/spicetify-themes/archive/master.zip",
+    "hash": "8ce241adadc1f52b478cd23b409bc272a5d32b3fc9b67b336788b438bc7c52e9",
+    "notes": "A preview of all of the themes can be found here: https://github.com/spicetify/spicetify-themes/blob/master/THEMES.md",
+    "extract_dir": "spicetify-themes-master",
+    "installer": {
+        "script": [
+            "if ($global) {",
+            "    Write-Host \"$app cannot be installed globally.\" -Foreground Red",
+            "    exit 1",
+            "}",
+            "",
+            "if (-not (Test-Path (get-spotify-path))) {",
+            "    Write-Host \"Spotify must be installed to install $app.\" -Foreground Red",
+            "    exit 1",
+            "}",
+            "",
+            "Get-ChildItem $dir -Directory | ForEach-Object {",
+            "    Remove-Item -ErrorAction Ignore -Recurse \"$env:USERPROFILE\\.spicetify\\Themes\\$($_.Name)\"",
+            "    Copy-Item -Recurse $_.FullName -Destination \"$env:USERPROFILE\\.spicetify\\Themes\"",
+            "}",
+            "",
+            "init-spicetify-config-and-apply"
+        ]
+    },
+    "uninstaller": {
+        "script": "Get-ChildItem \"$dir\" | ForEach-Object { Remove-Item -Recurse -ErrorAction Ignore \"$env:USERPROFILE\\.spicetify\\Themes\\$($_.Name)\" }"
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/spicetify/spicetify-themes/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/spicetify/spicetify-themes/archive/master.zip"
+    }
 }
