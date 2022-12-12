@@ -1,10 +1,10 @@
 {
-    "version": "2022-11-18T03.12.49",
+    "version": "2022-12-11T23.14.12",
     "description": "Community-created themes for Spicetify.",
     "homepage": "https://github.com/spicetify/spicetify-themes",
     "license": "MIT",
     "url": "https://github.com/spicetify/spicetify-themes/archive/master.zip",
-    "hash": "574793dd063445caa6e6054260502d65c0e05417f40e8a06406634954837e979",
+    "hash": "170902deb0d2ef8d01a42935e14b9d527a5ac04a05394645fafef1e7d1a2fd8d",
     "notes": "A preview of all of the themes can be found here: https://github.com/spicetify/spicetify-themes/blob/master/THEMES.md",
     "extract_dir": "spicetify-themes-master",
     "installer": {
